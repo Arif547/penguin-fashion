@@ -4,24 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+    <script src="https://kit.fontawesome.com/21d8b6e0f7.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-hero-bg: #FFFBF0;
+          --color-primary: #363958;
+          --color-secondary: #FABE4C;
+          --color-text-body: #3E3E3E;
+          --color-accent: #A4BC46;
+          --color-nav: #3C3C3C;
+          --color-accent-dark: #85A019;
+          --font-roboto: 'Roboto', sans-serif;
+          --font-bebas: 'Bebas Neue', sans-serif;
+        }
+      </style>
 </head>
 
-<body>
-    <header class="bg-[#FFFBF0]">
+<body class="font-roboto text-text-body">
+    <header class="bg-hero-bg">
         <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
             <img class="w-80" src="icons/logo.png" alt="logo">
             <nav>
-                <ul class="flex justify-end">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="flex justify-end gap-x-14 text-nav ">
+                    <li><a href="#" class="hover:text-secondary">Home</a></li>
+                    <li><a href="#" class="hover:text-secondary">Product</a></li>
+                    <li><a href="#" class="hover:text-secondary">About us</a></li>
+                    <li><a href="#" class="hover:text-secondary">Contact us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main>
+        <section class="bg-hero-bg">
+            <div class="max-w-7xl mx-auto flex justify-between pb-16 px-5">
+                <div>
+                    <h1 class="text-8xl text-primary font-bebas pt-22">
+                        <span class="text-secondary">Be the Penguins</span><br>
+                        of Winter      
+                    </h1>
+                    <p class="">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="px-9 py-5 rounded-xl bg-linear-to-t from-accent to-red-500"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
 
 </body>
 
